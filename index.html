@@ -3,11 +3,211 @@
 <head>
 	<title>SpeedCv</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 </head>
 
 <body>
-	<h3 class="text-center">Welcome to SpeedCv</h3>
-	<h4 class="text-center">Make your cv fast</h4>
+	<div class="container">
+		<h3 class="text-center">Welcome to SpeedCv</h3>
+		<h4 class="text-center">Make your cv fast</h4>
+		<div class="card">
+			<div class="card-header">
+				General Info
+			</div>
+			<div class="card-block">
+				<form id="form-cv" >
+					<div class="row">
+						<div class="col-md-6">
+							<label for="name" class="col-form-label">Full Name</label>
+							<input type="text" name="name" class="form-control" required>
+						</div>
+						<div class="col-md-6">
+							<label for="sex" class="col-form-label">Sex</label>
+							<select class="form-control" name="sex">
+								<option value="">Select</option>
+								<option value="Men">Men</option>
+								<option value="Woman">Woman</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<label for="street" class="col-form-label">Street</label>
+							<input type="text" name="street" class="form-control" required>
+						</div>
+						<div class="col-md-6">
+							<label for="neighborhood" class="col-form-label">Neighborhood</label>
+							<input type="text" name="neighborhood" class="form-control" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<label for="city" class="col-form-label">City</label>
+							<input type="text" name="city" class="form-control" required>
+						</div>
+						<div class="col-md-4">
+							<label for="state" class="col-form-label">State</label>
+							<input type="text" name="state" class="form-control" required>
+						</div>
+						<div class="col-md-4">
+							<label for="name" class="col-form-label">Number</label>
+							<input type="text" name="name" class="form-control" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<label for="age" class="col-form-label">Age</label>
+							<input type="text" name="age" class="form-control" required>
+						</div>
+						<div class="col-md-4">
+							<label for="phone-1" class="col-form-label">Phone 1</label>
+							<input type="text" name="phone-1" class="form-control" required>
+						</div>
+						<div class="col-md-4">
+							<label for="phone-2" class="col-form-label">Phone 2</label>
+							<input type="text" name="phone-2" class="form-control" required>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<br>
+		<div class="card">
+			<div class="card-header">
+				Education
+			</div>
+			<div class="card-block">
+				<div class="row">
+					<div class="col-md-6">
+						<label for="university-name" class="col-form-label">University Name or School</label>
+						<input type="text" name="university-name" class="form-control" required>
+					</div>
+					<div class="col-md-4">
+						<label for="status" class="col-form-label">Status</label>
+						<select class="form-control" name="sex">
+							<option value="">Select</option>
+							<option value="graduate">Graduate</option>
+							<option value="graduating">Graduating</option>
+							<option value="locked">Locked</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<label for="start-date" class="col-form-label">Start Date</label>
+						<input type="text" name="start-date" class="form-control" required>
+					</div>
+					<div class="col-md-4">
+						<label for="end-date" class="col-form-label">End Date</label>
+						<input type="text" name="end-date" class="form-control" required>
+					</div>
+					<div class="col-md-4">
+						<label for="semester" class="col-form-label">Semester</label>
+						<input type="number" name="semester" class="form-control" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<label for="languages" class="col-form-label">Languages</label>
+						<input type="text" name="languages" class="form-control" required>
+					</div>
+					<div class="col-md-4">
+						<label for="skill-level" class="col-form-label">Skill Level</label>
+						<select class="form-control" name="skill-level">
+							<option value="">Select</option>
+							<option value="graduate">Read, Writer and Speaker</option>
+							<option value="graduating">Read and Writer</option>
+							<option value="locked">Writer and Speaker</option>
+							<option value="locked">Read</option>
+							<option value="locked">Writer</option>
+							<option value="locked">Speaker</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<label for="level" class="col-form-label">Level</label>
+						<select class="form-control" name="level">
+							<option value="">Select</option>
+							<option value="graduate">Hard</option>
+							<option value="graduate">Medium</option>
+							<option value="graduate">Basic</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<button type="button" name="button" class="btn btn-primary">
+					<i class="fa fa-plus" aria-hidden="true"></i> Language
+				</button>
+			</div>
+		</div>
+		<br>
+		<div class="card">
+			<div class="card-header">
+				Skills
+			</div>
+			<div class="card-block">
+				<form class="skills">
+					<div class="row">
+						<div class="col-md-6">
+							<label for="skill-name" class="col-form-label">Skill Name</label>
+							<input type="text" name="skill-name" class="form-control" required>
+						</div>
+					</div>
+					<br>
+					<button type="button" name="button" class="btn btn-primary">
+						<i class="fa fa-plus" aria-hidden="true"></i> Skill Name
+					</button>
+				</form>
+			</div>
+		</div>
+		<br>
+		<div class="card">
+			<div class="card-header">
+				Expirience
+			</div>
+			<div class="card-block">
+				<form class="expirience">
+					<div class="row">
+						<div class="col-md-4">
+							<label for="company-name" class="col-form-label">Company Name</label>
+							<input type="text" name="company-name" class="form-control" required>
+						</div>
+						<div class="col-md-4">
+							<label for="ocupation" class="col-form-label">Ocupation</label>
+							<input type="text" name="ocupation" class="form-control" required>
+						</div>
+						<div class="col-md-4">
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="checkbox" class="form-check-input">
+									Actual
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<label for="start-date-company" class="col-form-label">Start Date</label>
+							<input type="text" name="start-date-company" class="form-control" required>
+						</div>
+						<div class="col-md-4">
+							<label for="end-date-company" class="col-form-label">End Date</label>
+							<input type="text" name="end-date-company" class="form-control" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<label for="description" class="col-form-label">Description</label>
+							<textarea name="description" rows="3" class="form-control"></textarea>
+						</div>
+					</div>
+					<hr>
+					<button type="button" name="button" class="btn btn-primary">
+						<i class="fa fa-plus" aria-hidden="true"></i> Company
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
 
 	<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
